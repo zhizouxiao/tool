@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+{% load static %}
+{% load staticfiles %}
+
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+	<!--{% load static %}-->
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/tool.css' %}" />
+ 	<script src="{% static 'js/jquery.min.js' %}"></script>
+     <!--<script src="{% static 'js/tool.js' %}"></script>-->
+</head>
+<body>
+    <h3>{% block title_name %}{% endblock %}</h3>
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    <!--<hr>-->
+    <!--<p>Thanks for visiting my site.</p>-->
+    {% endblock %}
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!--<script src="{% static 'js/tool.js' %}"></script>-->
+
+</body>
+</html>

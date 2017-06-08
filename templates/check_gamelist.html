@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}检查gamelist{% endblock %}
+{% block title_name %}检查gamelist{% endblock %}
+
+{% block content %}
+<form action="/check_gamelist/" method="post">
+<div>
+    {% csrf_token %}
+    <input type="text" class="input-control" placeholder="默认为：/home/tyhall-difang/hall37/source/config" name="config_path" id="config_path">
+    <!--<input id="your_name" type="text" name="your_name" value="{{ current_name }}">-->
+    <!--<button type="button" class="btn btn-primary" id="check_gamelist">检查</button></td>-->
+<input type="submit" value="检查">
+</div>
+
+<hr>
+{% if not init %}
+    {% if res %}
+        <p>配置正确！</p>
+    {% else %}
+        {% for info in infos %}
+            <h4>{{ info.gameId }}</h4>
+
+            {% for strinfo in info.info %}
+                <p>{{ strinfo }}</p>
+            {% endfor %}
+        {% endfor %}
+
+    {% endif %}
+{% endif %}
+
+</form>
+{% endblock %}

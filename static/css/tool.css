@@ -1,0 +1,68 @@
+
+.show { 
+    margin:0px;
+    padding:0px;
+    width: 40px;
+    list-style:none;
+    float: left;
+} 
+.my li { 
+    margin:0px;
+    padding:0px;
+    display: block; 
+} 
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .5s;
+}
+.btn-primary.btn-outline {
+  color: #428bca;
+}
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+.btn-disable.btn-outline {
+  color: #777;
+  border: 0.5px solid #aaa;
+}
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-disable.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: white;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .09);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .09); 
+  width:313px;
+  height:200px;
+}
+.input-control {
+  width: 350px;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
